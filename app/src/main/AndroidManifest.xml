@@ -20,22 +20,6 @@
         <activity android:name=".TentangKami" />
         <activity android:name=".MenuBangunDatar" />
         <activity android:name=".MenuBangunRuang" />
-        <activity android:name=".MenuPersegi" />
-        <activity android:name=".MenuSegitiga" />
-        <activity android:name=".MenuPersegiPanjang" />
-        <activity android:name=".MenuTrapesium" />
-        <activity android:name=".MenuLingkaran" />
-        <activity android:name=".MenuLayangLayang" />
-        <activity android:name=".MenuJajarGenjang" />
-        <activity android:name=".MenuBelahKetupat" />
-        <activity android:name=".MenuKubus" />
-        <activity android:name=".MenuLimas" />
-        <activity android:name=".MenuBalok" />
-        <activity android:name=".MenuPrisma" />
-        <activity android:name=".MenuBola" />
-        <activity android:name=".MenuTabung" />
-        <activity android:name=".MenuKerucut" />
-        <activity android:name=".MenuPentagon"></activity>
-    </application>
+        <activity android:name=".RecyclerViewBangunDatar"/></application>
 
 </manifest>

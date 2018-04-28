@@ -7,29 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".MenuUtama">
 
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="152dp"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_centerHorizontal="true"
-        android:alpha="0.4"
-        android:background="@drawable/backgroundgambar">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="152dp"
-        android:layout_alignBottom="@+id/imageView3"
-        android:layout_centerHorizontal="true"
-        android:alpha="0.4"
-        android:background="@drawable/backgroundgambar">
-
-    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -38,7 +19,7 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -47,19 +28,27 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="match_parent"
+        android:layout_width="307dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="189dp"
-        android:text="BANGUN DATAR" />
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="BANGUN DATAR"
+        android:textColor="@android:color/white"
+        android:textSize="8pt"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="match_parent"
+        android:layout_width="307dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="44dp"
-        android:text="BANGUN RUANG" />
+        android:text="BANGUN RUANG"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="8pt"/>
 </RelativeLayout>
