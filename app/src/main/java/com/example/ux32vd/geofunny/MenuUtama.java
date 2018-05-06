@@ -5,20 +5,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MenuUtama extends AppCompatActivity {
 
-    Button button3;
-    Button button4;
+    ImageButton imageButton1;
+    ImageButton imageButton2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_utama);
 
-        button3 = (Button)findViewById(R.id.button3);
+        imageButton1 = (ImageButton)findViewById(R.id.imageButton1);
 
-        button3 .setOnClickListener(new View.OnClickListener() {
+        imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent go = new Intent(MenuUtama.this,MenuBangunDatar.class);
@@ -26,9 +27,9 @@ public class MenuUtama extends AppCompatActivity {
             }
         });
 
-        button4 = (Button)findViewById(R.id.button4);
+        imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
 
-        button4.setOnClickListener(new View.OnClickListener() {
+        imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent go = new Intent (MenuUtama.this,MenuBangunRuang.class);

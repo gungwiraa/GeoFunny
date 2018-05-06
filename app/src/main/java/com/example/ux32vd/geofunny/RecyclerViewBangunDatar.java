@@ -21,7 +21,7 @@ public class RecyclerViewBangunDatar extends AppCompatActivity {
             tvrumus = (TextView) findViewById(R.id.bangundatarrumus);
             img = (ImageView) findViewById(R.id.bangundatarthumbnail);
 
-            //Mneerima data
+            //Menerima data
 
             Intent intent = getIntent();
             String Type = intent.getExtras().getString("Type");
