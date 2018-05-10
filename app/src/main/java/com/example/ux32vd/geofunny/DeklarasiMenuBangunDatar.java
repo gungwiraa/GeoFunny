@@ -39,8 +39,6 @@ public class DeklarasiMenuBangunDatar{
         Deskripsi = deskripsi;
     }
 
-    public void setThumbnail(int thumbnail) {
-        Thumbnail = thumbnail;
-    }
+    public void setThumbnail(int thumbnail) { Thumbnail = thumbnail; }
 
 }

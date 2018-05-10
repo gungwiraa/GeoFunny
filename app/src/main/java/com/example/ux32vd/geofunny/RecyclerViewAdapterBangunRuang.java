@@ -9,17 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+public class RecyclerViewAdapterBangunRuang extends RecyclerView.Adapter<RecyclerViewAdapterBangunRuang.MyViewHolder> {
 
     private Context mContext;
     private List<DeklarasiMenuBangunDatar> mData;
 
 
-    public RecyclerViewAdapter(Context mContext, List<DeklarasiMenuBangunDatar> mData) {
+    public RecyclerViewAdapterBangunRuang (Context mContext, List<DeklarasiMenuBangunDatar> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -42,24 +41,22 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View v) {
 
-                //deklarasi intent setiap perhitungan bangun datar
+                //deklarasi intent setiap perhitungan bangun ruang
                 Intent intent = new Intent(mContext,RecyclerViewBangunDatar.class);
                 if (position == 0){
-                    intent.putExtra("NamaBangun", "persegi");
+                    intent.putExtra("NamaBangun", "kubus");
                 }else if(position == 1){
-                    intent.putExtra("NamaBangun", "persegi panjang");
+                    intent.putExtra("NamaBangun", "balok");
                 }else if(position == 2){
-                    intent.putExtra("NamaBangun", "lingkaran");
+                    intent.putExtra("NamaBangun", "limas");
                 }else if(position == 3){
-                    intent.putExtra("NamaBangun", "segitiga");
+                    intent.putExtra("NamaBangun", "prisma");
                 }else if(position == 4){
-                    intent.putExtra("NamaBangun", "trapesium");
+                    intent.putExtra("NamaBangun", "tabung");
                 }else if(position == 5){
-                    intent.putExtra("NamaBangun", "jajar genjang");
+                    intent.putExtra("NamaBangun", "bola");
                 }else if(position == 6){
-                    intent.putExtra("NamaBangun", "belah ketupat");
-                }else if(position == 7){
-                    intent.putExtra("NamaBangun", "layang layang");
+                    intent.putExtra("NamaBangun", "kerucut");
                 }
 
 
@@ -97,4 +94,3 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
 }
-

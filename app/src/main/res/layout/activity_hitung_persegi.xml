@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HitungPersegi">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/persegi" />
+
+            <EditText
+                android:id="@+id/SisiKelilingPersegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Masukkan Sisi"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/white"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/HitungKelilingPersegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Hitung Keliling!"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/hasilKelilingPersegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HASIL PERHITUNGAN KELILING"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/SisiLuasPersegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Masukkan Panjang"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/white"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/HitungLuasPersegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Hitung Luas!"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/hasilLuasPersegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HASIL PERHITUNGAN LUAS"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

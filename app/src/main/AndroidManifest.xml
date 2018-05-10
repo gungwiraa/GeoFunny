@@ -21,6 +21,22 @@
         <activity android:name=".MenuBangunDatar" />
         <activity android:name=".MenuBangunRuang" />
         <activity android:name=".RecyclerViewBangunDatar" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".HitungPersegi" />
+        <activity android:name=".HitungPersegiPanjang" />
+        <activity android:name=".HitungLingkaran" />
+        <activity android:name=".HitungSegitiga" />
+        <activity android:name=".HitungTrapesium" />
+        <activity android:name=".HitungJajarGenjang" />
+        <activity android:name=".HitungBelahKetupat" />
+        <activity android:name=".HitungLayangLayang" />
+        <activity android:name=".HitungKubus" />
+        <activity android:name=".HitungBalok" />
+        <activity android:name=".HitungLimas" />
+        <activity android:name=".HitungPrisma" />
+        <activity android:name=".HitungTabung" />
+        <activity android:name=".HitungBola" />
+        <activity android:name=".HitungKerucut"></activity>
     </application>
 
 </manifest>
