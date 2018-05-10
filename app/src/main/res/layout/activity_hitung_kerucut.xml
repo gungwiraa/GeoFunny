@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".HitungKerucut">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/kerucut" />
+
+            <EditText
+                android:id="@+id/JariLPermukaanKerucut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Masukkan Jari-Jari"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/white"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/SisiSelimutLPermukaanKerucut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Masukkan Sisi Selimut"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/white"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/HitungLPermukaanKerucut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Hitung Luas Permukaan!"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/hasilLPermukaanKerucut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HASIL PERHITUNGAN LUAS PERMUKAAN"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/JariVolumeKerucut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Masukkan Jari-Jari"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/white"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/TinggiVolumeKerucut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Masukkan Tinggi Kerucut"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/white"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/HitungVolumeKerucut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Hitung Volume!"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/hasilVolumeKerucut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HASIL PERHITUNGAN VOLUME"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
