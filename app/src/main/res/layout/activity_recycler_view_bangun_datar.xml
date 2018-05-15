@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/backgroundtulisan"
     tools:context=".RecyclerViewBangunDatar">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backgroundgambar"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:id="@+id/bangundatarthumbnail"
+            />
+
+    </RelativeLayout>
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="400dp"
         android:padding="10dp">
 
         <LinearLayout
@@ -19,14 +39,6 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_marginTop="15dp"
-                android:layout_width="400dp"
-                android:layout_height="400dp"
-                android:background="@android:color/transparent"
-                android:id="@+id/bangundatarthumbnail"
-                android:scaleType="centerCrop"/>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -34,8 +46,8 @@
                 android:textSize="25dp"
                 android:background="@drawable/white_circle_drawable"
                 android:padding="8dp"
-                android:layout_marginTop="50dp"
-                android:backgroundTint="@android:color/holo_red_light"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@android:color/transparent"
                 android:id="@+id/bangundatartype"
                 android:textColor="@android:color/white"
                 />
@@ -48,7 +60,7 @@
                 android:background="@drawable/white_circle_drawable"
                 android:padding="8dp"
                 android:layout_marginTop="15dp"
-                android:backgroundTint="@android:color/holo_red_light"
+                android:backgroundTint="@android:color/transparent"
                 android:id="@+id/bangundatarrumus"
                 android:textColor="@android:color/white"
                 />
@@ -64,7 +76,7 @@
                 android:layout_marginBottom="30dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
-                android:backgroundTint="@android:color/holo_red_light"
+                android:backgroundTint="@android:color/transparent"
                 android:id="@+id/bangundatardeskripsi"
                 android:textColor="@android:color/white"
                 />
@@ -84,4 +96,4 @@
 
     </android.support.v4.widget.NestedScrollView>
 
-</LinearLayout>
+</RelativeLayout>

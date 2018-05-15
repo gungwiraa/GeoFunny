@@ -36,9 +36,9 @@
                 android:ems="10"
                 android:hint="Masukkan Jari-Jari"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/SisiSelimutLPermukaanKerucut"
@@ -49,14 +49,17 @@
                 android:ems="10"
                 android:hint="Masukkan Sisi Selimut"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungLPermukaanKerucut"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Luas Permukaan!"
@@ -71,7 +74,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/JariVolumeKerucut"
@@ -82,9 +85,9 @@
                 android:ems="10"
                 android:hint="Masukkan Jari-Jari"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/TinggiVolumeKerucut"
@@ -95,14 +98,17 @@
                 android:ems="10"
                 android:hint="Masukkan Tinggi Kerucut"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungVolumeKerucut"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Volume!"
@@ -117,7 +123,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
 
         </LinearLayout>

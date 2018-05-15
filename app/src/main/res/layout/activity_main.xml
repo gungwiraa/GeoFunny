@@ -4,18 +4,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="@drawable/splashbackground"
+android:background="@drawable/background"
 tools:context=".SplashActivity">
 
-<ImageView
-    android:id="@+id/imageView6"
-    android:layout_width="500dp"
-    android:layout_height="wrap_content"
-    android:layout_alignParentStart="true"
-    android:layout_centerVertical="true"
-    android:paddingLeft="30dp"
-    android:paddingRight="30dp"
-    app:srcCompat="@drawable/logosementara3"
-    tools:layout_editor_absoluteX="283dp"
-    tools:layout_editor_absoluteY="249dp" />
 </RelativeLayout>

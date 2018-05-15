@@ -37,9 +37,9 @@
                 android:ems="10"
                 android:hint="Masukkan Panjang"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/LebarKelilingPersegiPanjang"
@@ -50,14 +50,17 @@
                 android:ems="10"
                 android:hint="Masukkan Lebar"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungKelilingPersegiPanjang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Keliling!"
@@ -72,7 +75,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/PanjangLuasPersegiPanjang"
@@ -83,9 +86,9 @@
                 android:ems="10"
                 android:hint="Masukkan Panjang"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/LebarLuasPersegiPanjang"
@@ -96,14 +99,17 @@
                 android:ems="10"
                 android:hint="Masukkan Lebar"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungLuasPersegiPanjang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Luas!"
@@ -118,7 +124,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
 
         </LinearLayout>

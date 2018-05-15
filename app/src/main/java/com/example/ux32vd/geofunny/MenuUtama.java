@@ -11,6 +11,8 @@ public class MenuUtama extends AppCompatActivity {
 
     ImageButton imageButton1;
     ImageButton imageButton2;
+    ImageButton imageButton3;
+    ImageButton imageButton4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,26 @@ public class MenuUtama extends AppCompatActivity {
         imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
 
         imageButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent go = new Intent (MenuUtama.this,MenuBangunRuang.class);
+                startActivity(go);
+            }
+        });
+
+        imageButton3 = (ImageButton)findViewById(R.id.imageButton3);
+
+        imageButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent go = new Intent(MenuUtama.this,MenuBangunDatar.class);
+                startActivity(go);
+            }
+        });
+
+        imageButton4 = (ImageButton) findViewById(R.id.imageButton4);
+
+        imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent go = new Intent (MenuUtama.this,MenuBangunRuang.class);

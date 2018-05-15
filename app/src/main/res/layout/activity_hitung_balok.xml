@@ -36,9 +36,9 @@
                 android:ems="10"
                 android:hint="Masukkan Panjang"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/LebarLPermukaanBalok"
@@ -49,9 +49,9 @@
                 android:ems="10"
                 android:hint="Masukkan Lebar"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/TinggiLPermukaanBalok"
@@ -62,14 +62,17 @@
                 android:ems="10"
                 android:hint="Masukkan Tinggi"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungLPermukaanBalok"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Luas Permukaan!"
@@ -84,7 +87,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/PanjangVolumeBalok"
@@ -95,9 +98,9 @@
                 android:ems="10"
                 android:hint="Masukkan Panjang"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/LebarVolumeBalok"
@@ -108,9 +111,9 @@
                 android:ems="10"
                 android:hint="Masukkan Lebar"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/TinggiVolumeBalok"
@@ -121,14 +124,17 @@
                 android:ems="10"
                 android:hint="Masukkan Tinggi"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungVolumeBalok"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Volume!"
@@ -143,7 +149,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
 
         </LinearLayout>

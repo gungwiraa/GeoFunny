@@ -36,9 +36,9 @@
                 android:ems="10"
                 android:hint="Masukkan Sisi 1"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/Sisi2KelilingLayang"
@@ -49,14 +49,17 @@
                 android:ems="10"
                 android:hint="Masukkan Sisi 2"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungKelilingLayang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Keliling!"
@@ -71,7 +74,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/Diagonal1LuasLayang"
@@ -82,9 +85,9 @@
                 android:ems="10"
                 android:hint="Masukkan Diagonal 1"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/Diagonal2LuasLayang"
@@ -95,14 +98,17 @@
                 android:ems="10"
                 android:hint="Masukkan Diagonal 2"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungLuasLayang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Luas!"
@@ -117,7 +123,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
 
         </LinearLayout>

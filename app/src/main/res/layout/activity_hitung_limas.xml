@@ -36,9 +36,9 @@
                 android:ems="10"
                 android:hint="Masukkan Sisi"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/AlasLPermukaanLimas"
@@ -49,9 +49,9 @@
                 android:ems="10"
                 android:hint="Masukkan Alas"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/TinggiLPermukaanLimas"
@@ -62,14 +62,17 @@
                 android:ems="10"
                 android:hint="Masukkan Tinggi"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungLPermukaanLimas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Luas Permukaan!"
@@ -84,7 +87,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/SisiVolumeLimas"
@@ -95,9 +98,9 @@
                 android:ems="10"
                 android:hint="Masukkan Sisi"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <EditText
                 android:id="@+id/TinggiVolumeLimas"
@@ -108,14 +111,17 @@
                 android:ems="10"
                 android:hint="Masukkan Tinggi"
                 android:inputType="numberDecimal"
-                android:textColorHint="@android:color/white"
+                android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
             <Button
                 android:id="@+id/HitungVolumeLimas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Hitung Volume!"
@@ -130,7 +136,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/black"/>
 
         </LinearLayout>
 
