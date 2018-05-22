@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungBalok extends AppCompatActivity {
 
@@ -42,6 +43,10 @@ public class HitungBalok extends AppCompatActivity {
                 tlpermukaan = Double.parseDouble(tinggilpermukaan.getText().toString());
                 jumlahlpermukaan = (2*plpermukaan*llpermukaan) + (2*llpermukaan*tlpermukaan) + (2*plpermukaan*tlpermukaan);
                 hasillpermukaan.setText(String.valueOf(jumlahlpermukaan));
+
+                if(plpermukaan == null);{
+                    Toast.makeText(getApplicationContext(), "Input salah!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

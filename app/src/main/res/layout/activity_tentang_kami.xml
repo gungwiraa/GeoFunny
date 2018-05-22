@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/backgroundtulisan"
     tools:context=".TentangKami">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView8"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -16,9 +16,11 @@
         android:layout_marginBottom="-176dp"
         app:srcCompat="@drawable/profil3"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteY="288dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"/>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView9"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -27,9 +29,11 @@
         android:layout_marginEnd="26dp"
         app:srcCompat="@drawable/profil2"
         tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteY="288dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"/>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView10"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -38,9 +42,11 @@
         android:layout_marginStart="27dp"
         app:srcCompat="@drawable/profil4"
         tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteY="288dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"/>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView7"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -48,15 +54,19 @@
         android:layout_alignTop="@+id/imageView8"
         app:srcCompat="@drawable/profil1"
         tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="61dp" />
+        tools:layout_editor_absoluteY="61dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"/>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageView5"
-        app:srcCompat="@drawable/teksgeofunny" />
+        android:layout_marginBottom="247dp"
+        app:srcCompat="@drawable/teksgeofunny"
+        android:background="@android:color/transparent"/>
 
     <ImageView
         android:id="@+id/imageView5"
@@ -64,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="350dp"
+        android:layout_marginBottom="320dp"
         app:srcCompat="@drawable/teksgeofunny3" />
 
     <TextView
@@ -77,7 +87,7 @@
         android:text="Arya Wiradarma
 1605551023"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         tools:layout_editor_absoluteX="22dp"
         tools:layout_editor_absoluteY="438dp" />
 
@@ -90,7 +100,7 @@
         android:text="Ary Suta Sanjaya
 1605551005"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         tools:layout_editor_absoluteX="22dp"
         tools:layout_editor_absoluteY="438dp" />
 
@@ -103,7 +113,7 @@
         android:text="Iduar Perdana
 1605551010"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         tools:layout_editor_absoluteX="232dp"
         tools:layout_editor_absoluteY="438dp" />
 
@@ -117,7 +127,7 @@
         android:text="Bayu Bahari
 1605551029"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="211dp" />
 

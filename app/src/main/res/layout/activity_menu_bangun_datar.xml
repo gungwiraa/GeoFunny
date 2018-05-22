@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MenuBangunDatar"
     android:padding="8dp"
-    android:background="@drawable/background">
+    android:background="@drawable/backgroundtulisan">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/RecyclerView_id"

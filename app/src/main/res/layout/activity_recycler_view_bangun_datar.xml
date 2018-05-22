@@ -10,7 +10,7 @@
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:layout_alignParentTop="true"
         android:background="@drawable/backgroundgambar"
         android:gravity="center"
@@ -30,7 +30,7 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="350dp"
         android:padding="10dp">
 
         <LinearLayout
@@ -69,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Description"
-                android:textSize="15dp"
+                android:textSize="18dp"
                 android:background="@drawable/white_circle_drawable"
                 android:padding="8dp"
                 android:layout_marginTop="15dp"

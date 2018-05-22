@@ -1,46 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".HitungTabung">
+    android:background="@drawable/backgroundtulisan"
+    tools:context=".RecyclerViewBangunDatar">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backgroundgambar"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/tabung" />
+
+    </RelativeLayout>
+
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="350dp"
         android:padding="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical">>
 
-
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/tabung" />
-
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/DiameterLPermukaanTabung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Masukkan Diameter"
                 android:inputType="numberDecimal"
                 android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"/>
 
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/PanjangSelimutLPermukaanTabung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -51,9 +68,13 @@
                 android:inputType="numberDecimal"
                 android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"/>
 
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/TinggiSelimutLPermukaanTabung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,7 +85,11 @@
                 android:inputType="numberDecimal"
                 android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"/>
 
             <Button
                 android:id="@+id/HitungLPermukaanTabung"
@@ -78,18 +103,22 @@
                 android:text="Hitung Luas Permukaan!"
                 android:textSize="15dp" />
 
-            <TextView
+            <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
                 android:id="@+id/hasilLPermukaanTabung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="HASIL PERHITUNGAN LUAS PERMUKAAN"
+                android:hint="HASIL PERHITUNGAN LUAS PERMUKAAN"
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"/>
 
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/JariVolumeTabung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,9 +129,13 @@
                 android:inputType="numberDecimal"
                 android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"/>
 
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/TinggiSelimutVolumeTabung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -113,7 +146,11 @@
                 android:inputType="numberDecimal"
                 android:textColorHint="@android:color/black"
                 android:textSize="20dp"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"/>
 
             <Button
                 android:id="@+id/HitungVolumeTabung"
@@ -127,7 +164,7 @@
                 android:text="Hitung Volume!"
                 android:textSize="15dp" />
 
-            <TextView
+            <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
                 android:id="@+id/hasilVolumeTabung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -136,11 +173,15 @@
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"/>
 
 
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
 
-</LinearLayout>
+</RelativeLayout>
