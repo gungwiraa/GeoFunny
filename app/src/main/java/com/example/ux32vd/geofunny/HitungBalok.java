@@ -44,8 +44,6 @@ public class HitungBalok extends AppCompatActivity {
                 jumlahlpermukaan = (2*plpermukaan*llpermukaan) + (2*llpermukaan*tlpermukaan) + (2*plpermukaan*tlpermukaan);
                 hasillpermukaan.setText(String.valueOf(jumlahlpermukaan));
 
-                if (plpermukaan = Double.MIN_VALUE);
-                
             }
         });
 
