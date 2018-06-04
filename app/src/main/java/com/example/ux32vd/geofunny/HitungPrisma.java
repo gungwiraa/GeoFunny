@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungPrisma extends AppCompatActivity {
 
@@ -37,6 +38,12 @@ public class HitungPrisma extends AppCompatActivity {
         luaspermukaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (alaslpermukaan.getText().length() == 0 || tinggilpermukaan.getText().length() == 0 || sisilpermukaan.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 alpermukaan = Double.parseDouble(alaslpermukaan.getText().toString());
                 tlpermukaan = Double.parseDouble(tinggilpermukaan.getText().toString());
                 slpermukaan = Double.parseDouble(sisilpermukaan.getText().toString());
@@ -48,6 +55,12 @@ public class HitungPrisma extends AppCompatActivity {
         volume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (alasvolume.getText().length() == 0 || tinggivolume.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 avolume = Double.parseDouble(alasvolume.getText().toString());
                 tvolume = Double.parseDouble(tinggivolume.getText().toString());
                 tsisivolume = Double.parseDouble(tinggisisivolume.getText().toString());

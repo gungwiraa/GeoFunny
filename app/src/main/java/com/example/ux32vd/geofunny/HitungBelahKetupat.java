@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungBelahKetupat extends AppCompatActivity {
 
@@ -33,6 +34,12 @@ public class HitungBelahKetupat extends AppCompatActivity {
         keliling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (sisikeliling.getText().length() == 0 ){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 skeliling = Double.parseDouble(sisikeliling.getText().toString());
                 jumlahkeliling = 4*skeliling;
                 hasilkeliling.setText(String.valueOf(jumlahkeliling));
@@ -42,6 +49,12 @@ public class HitungBelahKetupat extends AppCompatActivity {
         luas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (diagonal1luas.getText().length() == 0 || diagonal2luas.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 d1luas = Double.parseDouble(diagonal1luas.getText().toString());
                 d2luas = Double.parseDouble(diagonal2luas.getText().toString());
                 jumlahluas = d1luas * d2luas / 2;

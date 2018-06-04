@@ -50,6 +50,7 @@
                 android:backgroundTint="@android:color/transparent"
                 android:id="@+id/bangundatartype"
                 android:textColor="@android:color/white"
+                android:gravity="center"
                 />
 
             <TextView
@@ -63,6 +64,7 @@
                 android:backgroundTint="@android:color/transparent"
                 android:id="@+id/bangundatarrumus"
                 android:textColor="@android:color/white"
+                android:gravity="center"
                 />
 
             <TextView
@@ -79,6 +81,7 @@
                 android:backgroundTint="@android:color/transparent"
                 android:id="@+id/bangundatardeskripsi"
                 android:textColor="@android:color/white"
+                android:gravity="center"
                 />
 
             <Button

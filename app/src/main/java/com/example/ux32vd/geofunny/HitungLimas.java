@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungLimas extends AppCompatActivity {
 
@@ -36,6 +37,12 @@ public class HitungLimas extends AppCompatActivity {
         luaspermukaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (sisilpermukaan.getText().length() == 0 || alaslpermukaan.getText().length() == 0 || tinggilpermukaan.getText().length() == 0 || tinggilpermukaan.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 slpermukaan = Double.parseDouble(sisilpermukaan.getText().toString());
                 alpermukaan = Double.parseDouble(alaslpermukaan.getText().toString());
                 tlpermukaan = Double.parseDouble(tinggilpermukaan.getText().toString());
@@ -47,6 +54,12 @@ public class HitungLimas extends AppCompatActivity {
         volume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (sisivolume.getText().length() == 0 || tinggivolume.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 svolume = Double.parseDouble(sisivolume.getText().toString());
                 tvolume = Double.parseDouble(tinggivolume.getText().toString());
                 jumlahvolume = (svolume*svolume)*tvolume / 3;

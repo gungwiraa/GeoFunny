@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungBola extends AppCompatActivity {
 
@@ -33,6 +34,12 @@ public class HitungBola extends AppCompatActivity {
         luaspermukaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (jarilpermukaan.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 jlpermukaan = Double.parseDouble(jarilpermukaan.getText().toString());
                 jumlahlpermukaan = 4*3.14*jlpermukaan*jlpermukaan;
                 hasillpermukaan.setText(String.valueOf(jumlahlpermukaan));
@@ -42,6 +49,12 @@ public class HitungBola extends AppCompatActivity {
         volume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (jarivolume.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 jvolume = Double.parseDouble(jarivolume.getText().toString());
                 jumlahvolume = 4*3.14*jvolume*jvolume*jvolume/3;
                 hasilvolume.setText(String.valueOf(jumlahvolume));

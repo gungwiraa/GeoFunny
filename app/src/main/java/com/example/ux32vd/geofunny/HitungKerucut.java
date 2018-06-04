@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungKerucut extends AppCompatActivity {
 
@@ -35,6 +36,12 @@ public class HitungKerucut extends AppCompatActivity {
         luaspermukaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (jarilpermukaan.getText().length() == 0 || sisiselimutlpermukaan.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 jlpermukaan = Double.parseDouble(jarilpermukaan.getText().toString());
                 slpermukaan = Double.parseDouble(sisiselimutlpermukaan.getText().toString());
                 jumlahlpermukaan = (3.14*jlpermukaan*jlpermukaan) + (3.14*jlpermukaan*slpermukaan);
@@ -45,6 +52,12 @@ public class HitungKerucut extends AppCompatActivity {
         volume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (jarivolume.getText().length() == 0 || tinggivolume.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 jvolume = Double.parseDouble(jarivolume.getText().toString());
                 tvolume = Double.parseDouble(tinggivolume.getText().toString());
                 jumlahvolume = (3.14*jvolume*jvolume) * tvolume / 3;

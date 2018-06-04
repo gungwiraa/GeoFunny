@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungTrapesium extends AppCompatActivity {
 
@@ -37,6 +38,12 @@ public class HitungTrapesium extends AppCompatActivity {
         keliling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (sisi1keliling.getText().length() == 0 || sisi2keliling.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 s1keliling = Double.parseDouble(sisi1keliling.getText().toString());
                 s2keliling = Double.parseDouble(sisi2keliling.getText().toString());
                 smiringkeliling = Double.parseDouble(sisimiringkeliling.getText().toString());
@@ -48,6 +55,12 @@ public class HitungTrapesium extends AppCompatActivity {
         luas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (sisi1luas.getText().length() == 0 || sisi2luas.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 s1luas = Double.parseDouble(sisi1luas.getText().toString());
                 s2luas = Double.parseDouble(sisi2luas.getText().toString());
                 tluas = Double.parseDouble(tinggiluas.getText().toString());

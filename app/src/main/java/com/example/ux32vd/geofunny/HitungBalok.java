@@ -38,6 +38,12 @@ public class HitungBalok extends AppCompatActivity {
         luaspermukaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (panjanglpermukaan.getText().length() == 0 || lebarlpermukaan.getText().length() == 0 || tinggilpermukaan.getText().length() == 0){
+                Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                return;
+                }
+
                 plpermukaan = Double.parseDouble(panjanglpermukaan.getText().toString());
                 llpermukaan = Double.parseDouble(lebarlpermukaan.getText().toString());
                 tlpermukaan = Double.parseDouble(tinggilpermukaan.getText().toString());
@@ -50,6 +56,12 @@ public class HitungBalok extends AppCompatActivity {
         volume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (panjangvolume.getText().length() == 0 || lebarvolume.getText().length() == 0 || tinggivolume.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 pvolume = Double.parseDouble(panjangvolume.getText().toString());
                 lvolume = Double.parseDouble(lebarvolume.getText().toString());
                 tvolume = Double.parseDouble(tinggivolume.getText().toString());

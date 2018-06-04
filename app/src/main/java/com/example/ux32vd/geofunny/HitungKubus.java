@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungKubus extends AppCompatActivity {
 
@@ -33,6 +34,12 @@ public class HitungKubus extends AppCompatActivity {
         luaspermukaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (sisilpermukaan.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 slpermukaan = Double.parseDouble(sisilpermukaan.getText().toString());
                 jumlahlpermukaan = 6*slpermukaan*slpermukaan;
                 hasillpermukaan.setText(String.valueOf(jumlahlpermukaan));
@@ -42,6 +49,12 @@ public class HitungKubus extends AppCompatActivity {
         volume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (sisivolume.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 svolume = Double.parseDouble(sisivolume.getText().toString());
                 jumlahvolume = svolume * svolume * svolume;
                 hasilvolume.setText(String.valueOf(jumlahvolume));

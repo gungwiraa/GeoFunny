@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungLingkaran extends AppCompatActivity {
 
@@ -34,6 +35,12 @@ public class HitungLingkaran extends AppCompatActivity {
         keliling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (diameterkeliling.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 dkeliling = Double.parseDouble(diameterkeliling.getText().toString());
                 jumlahkeliling = 3.14*dkeliling;
                 hasilkeliling.setText(String.valueOf(jumlahkeliling));
@@ -43,6 +50,12 @@ public class HitungLingkaran extends AppCompatActivity {
         luas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (jariluas.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 jluas = Double.parseDouble(jariluas.getText().toString());
                 jumlahluas = 3.14 * jluas * jluas;
                 hasilluas.setText(String.valueOf(jumlahluas));

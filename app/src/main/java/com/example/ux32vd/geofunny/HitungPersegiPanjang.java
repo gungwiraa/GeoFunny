@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HitungPersegiPanjang extends AppCompatActivity {
 
@@ -35,6 +36,12 @@ public class HitungPersegiPanjang extends AppCompatActivity {
         keliling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (panjangkeliling.getText().length() == 0 || lebarkeliling.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 pkeliling = Double.parseDouble(panjangkeliling.getText().toString());
                 lkeliling = Double.parseDouble(lebarkeliling.getText().toString());
                 jumlahkeliling = 2*(pkeliling+lkeliling);
@@ -45,6 +52,12 @@ public class HitungPersegiPanjang extends AppCompatActivity {
         luas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (panjangluas.getText().length() == 0 || lebarluas.getText().length() == 0){
+                    Toast.makeText(getApplicationContext(),"Kolom Perhitungan Belum Lengkap", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 pluas = Double.parseDouble(panjangluas.getText().toString());
                 lluas = Double.parseDouble(lebarluas.getText().toString());
                 jumlahluas = pluas * lluas;
